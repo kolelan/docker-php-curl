@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  php-curl-srv:
+    container_name: php-curl-srv
+    build:
+      context: docker/
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8321:80
