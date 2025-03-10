@@ -1,4 +1,5 @@
 <?php
+echo "Version ",phpversion(),PHP_EOL;
 // Initialize a cURL session
 $ch = curl_init("https://reqres.in/api/users");
 
